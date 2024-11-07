@@ -123,4 +123,11 @@ console.log(cutString('facciamo una preghiera tutti insieme'));
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n){
+    let casualnum = [];
+    for(let i=0; i<n; i++){
+        casualnum.push(Math.floor(Math.random()) * 11);
+    }
+    return casualnum;
+}
+console.log(giveMeRandom(13));
