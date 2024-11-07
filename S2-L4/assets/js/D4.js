@@ -60,7 +60,7 @@ console.log(boundary(450));
 */
 
 function epify(string){
-    if(string.indexOf('EPICODE' === 'EPICODE')){
+    if(string.indexOf('EPICODE') === 0){
         return string;
     }else{
         return string + 'EPICODE';
@@ -92,7 +92,6 @@ function reverseString(string) {
     let revString = nwString.reverse();
     return revString.join('');
   }
-  
   console.log(reverseString("Alessandro"));
 
 /* ESERCIZIO 8
@@ -102,8 +101,8 @@ function reverseString(string) {
 
 function upperFirst(string){
     let myString = string.split(' ');
-    for (let i=0; i< myString.lenght; i++ ){
-      myString = myString[i].charAt(0).toUpperCase()+ myString[i].slice(1); 
+    for (let i=0; i< myString.length; i++ ){
+      myString[i] = myString[i].charAt(0).toUpperCase()+ myString[i].slice(1);
     }
     return myString.join(' ');
 }
@@ -126,7 +125,7 @@ console.log(cutString('facciamo una preghiera tutti insieme'));
 function giveMeRandom(n){
     let casualnum = [];
     for(let i=0; i<n; i++){
-        casualnum.push(Math.floor(Math.random()) * 11);
+        casualnum[i] = Math.floor(Math.random() * 11);
     }
     return casualnum;
 }
